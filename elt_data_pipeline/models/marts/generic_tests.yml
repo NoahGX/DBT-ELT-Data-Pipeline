@@ -6,7 +6,7 @@ models:
           - unique
           - not_null
           - relationships:
-              to: ('stg_tpch_orders')
+              to: ref('stg_tpch_orders')
               field: order_key
               severity: warn
       - name: status_code
