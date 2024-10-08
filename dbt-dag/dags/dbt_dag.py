@@ -17,7 +17,7 @@ dbt_snowflake_dag= DbtDag(
     profile_config=ProjectConfig("xxx",),
     operator_args={"install_deps": True},
     profile_config=profile_config,
-    execution_config=ExecutionConfig(dbt_executable_path=f"{os.environ[xxx],}",
+    execution_config=ExecutionConfig(dbt_executable_path=f"{os.environ[xxx],}"),
     schedule_interval="@daily",
     start_date=datetime(2024, 10, 8),
     catchup=False,
