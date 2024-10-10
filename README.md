@@ -10,7 +10,7 @@ This project is an ELT (Extract, Load, Transform) Data Pipeline that integrates 
 - **Snowflake Integration**: Secure connection and data management within the Snowflake cloud data warehouse.
 - **Astronomer Cosmos Integration**: Simplifies the integration of dbt within Airflow.
 - **Data Quality Assurance**: Implemented tests and validations to ensure data integrity.
-- **Scalable and Maintainable**: Easy to scale and maintain due to modular design and use of industry-standard tools.
+- **Scalable**: Easy to scale and maintain due to modular design and use of industry-standard tools.
 
 ## Usage
 ### Starting the Airflow Environment
@@ -63,15 +63,15 @@ To stop the Airflow services and Docker containers:
 
 ## Notes
 - **Configuration Files**:
-    - **Dockerfile**: Defines the Docker image, including the installation of `dbt-snowflake`.
-    - **requirements.txt**: Lists Python dependencies, including `astronomer-cosmos` and `apache-airflow-providers-snowflake`.
+    - **Dockerfile**: Defines the Docker image.
+    - **requirements.txt**: Lists the Python dependencies.
     - **airflow_settings.yaml**: Used to set up Airflow connections and variables.
 
 - **Airflow Connections**:
     - A Snowflake connection (`snowflake_conn`) must be configured in Airflow with the correct account name, username, password, and other optional parameters like warehouse, database, schema, and role.
 
 - **dbt Integration**:
-    - The `dbt_dag.py` file in the `dags/dbt/` directory defines the Airflow DAG that orchestrates the dbt project.
+    - The `dbt_dag.py` file defines the Airflow DAG that orchestrates the dbt project.
     - Ensure that the paths in `dbt_dag.py` are correctly set to point to the dbt project and the `dbt` executable within the Docker container.
 
 - **Extensibility**:
