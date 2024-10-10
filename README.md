@@ -39,7 +39,7 @@ To stop the Airflow services and Docker containers:
     astro dev stop
     ```
 
-## 4. Prerequisites
+## Prerequisites
 - **Docker**: Ensure Docker is installed and running on your machine.
 - **dbt**: Installed within the Docker container via the `Dockerfile`.
 - **Astronomer CLI**: Install the Astronomer CLI to manage Airflow projects.
@@ -50,18 +50,18 @@ To stop the Airflow services and Docker containers:
 - **Snowflake Account**: Access to a Snowflake data warehouse with appropriate permissions.
 - **Python Virtual Environment**: (Optional) For local development and testing.
 
-## 5. Input
+## Input
 - **Raw Data Sources**: The pipeline is designed to work with TPCH datasets.
 - **dbt Models**: SQL files located in the `models/` directory defining the transformations.
 - **Macros and Tests**: Custom dbt macros and tests to ensure data quality.
 - **Airflow DAGs**: Python files defining the workflows, located in the `dags/` directory.
 
-## 6. Output
+## Output
 - **Transformed Data**: Cleaned and transformed data loaded into Snowflake, ready for analysis.
 - **Fact and Dimension Tables**: Created in Snowflake based on the dbt models.
 - **Logs and Reports**: Execution logs available in Airflow for monitoring and troubleshooting.
 
-## 7. Notes
+## Notes
 - **Configuration Files**:
     - **Dockerfile**: Defines the Docker image, including the installation of `dbt-snowflake`.
     - **requirements.txt**: Lists Python dependencies, including `astronomer-cosmos` and `apache-airflow-providers-snowflake`.
