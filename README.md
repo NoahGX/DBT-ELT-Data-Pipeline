@@ -1,7 +1,7 @@
 # DBT ELT Data Pipeline
 
 ## Overview
-This project is an ELT (Extract, Load, Transform) Data Pipeline that integrates **dbt (data build tool)**, **Snowflake**, and **Docker**, and **Apache Airflow** to automate tasks for data processing and transformation. The pipeline extracts data, loads it into Snowflake, transforms it using dbt models, and orchestrates the entire workflow using Airflow. It also utilizes **Astronomer** for Airflow deployment and management, leveraging **Astronomer Cosmos** for smooth integration of dbt within Airflow DAGs.
+This project is an ELT (Extract, Load, Transform) Data Pipeline that integrates **dbt (data build tool)**, **Snowflake**, and **Docker**, and **Apache Airflow** to automate tasks for data processing and transformation. The pipeline extracts data, loads it into Snowflake, transforms it using dbt models, and orchestrates the entire workflow using Airflow. The project utilizes **Astronomer** for Airflow deployment and management, leveraging **Astronomer Cosmos** for smooth integration of dbt within Airflow DAGs.
 
 ## Features
 - **dbt Data Transformation**: Modular SQL transformations using dbt models, macros, and tests.
