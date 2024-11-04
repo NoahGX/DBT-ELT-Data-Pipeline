@@ -15,9 +15,9 @@ This project is an ELT (Extract, Load, Transform) Data Pipeline that integrates 
 ## Usage
 ### Starting the Airflow Environment
 1. **Build and Start the Docker Containers**:
-    ```
+```zsh
     astro dev start
-    ```
+```
 
 2. **Access the Airflow Web Interface**:
     Open your browser and navigate to `http://localhost:8080`.
@@ -35,18 +35,18 @@ This project is an ELT (Extract, Load, Transform) Data Pipeline that integrates 
 
 ### Stopping the Airflow Environment
 To stop the Airflow services and Docker containers:
-    ```bash
+ ```zsh
     astro dev stop
-    ```
+```
 
 ## Prerequisites
 - **Docker**: Ensure Docker is installed and running on your machine.
 - **dbt**: Installed within the Docker container via the `Dockerfile`.
 - **Astronomer CLI**: Install the Astronomer CLI to manage Airflow projects.
     - Install via Homebrew:
-        ```
+```zsh
         brew install astro
-        ```
+```
 - **Snowflake Account**: Access to a Snowflake data warehouse with appropriate permissions.
 - **Python Virtual Environment**: (Optional) For local development and testing.
 
